@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{{site.title}}</title>
+  </head>
+  <body>
+    <main>
+      <article>
+        {% if page.headshot %}
+        <img class="headshot" src="/assets/images/{{page.headshot}}" alt="" />
+        {% endif %}
+        {{content}}
+      </article>
+      <aside>
+        <img class="full" src="/assets/images/{{page.image}}" alt="" />
+      </aside>
+    </main>
+  </body>
+</html>
